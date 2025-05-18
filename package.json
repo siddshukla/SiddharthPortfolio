@@ -1,0 +1,16 @@
+{
+  "name": "barbeque-nation-chatbot",
+  "version": "1.0.0",
+  "description": "Chatbot backend for Barbeque Nation using Express.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.15.0",
+    "uuid": "^9.0.0"
+  }
+}

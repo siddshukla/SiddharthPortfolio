@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbeque Nation Chatbot</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        
+        /* Chat Container */
+        .chat-container {
+            max-width: 100%;
+            width: 450px;
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+        }
+        
+        /* Chat Header */
+        .chat-header {
+            background-color: #D82C20; /* Barbeque Nation red */
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .chat-header h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .chat-header .logo {
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #D82C20;
+            font-weight: bold;
+        }
+        
+        /* Chat Messages */
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background-color: #f5f5f5;
+        }
+        
+        .message {
+            margin-bottom: 15px;
+            display: flex;
+        }
+        
+        .message-bot {
+            justify-content: flex-start;
+        }
+        
+        .message-user {
+            justify-content: flex-end;
+        }
+        
+        .message-content {
+            max-width: 80%;
+            padding: 10px 15px;
+            border-radius: 18px;
+            position: relative;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .message-bot .message-content {
+            background-color: white;
+            color: #333;
+            border-bottom-left-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .message-user .message-content {
+            background-color: #D82C20;
+            color: white;
+            border-bottom-right-radius: 5px;
+        }
+        
+        /* Quick Reply Buttons */
+        .quick-replies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        
+        .quick-reply {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            padding: 6px 12px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .quick-reply:hover {
+            background-color: #f0f0f0;
+        }
+        
+        /* Chat Input */
+        .chat-input {
+            display: flex;
+            padding: 15px;
+            border-top: 1px solid #eee;
+            background-color: white;
+        }
+        
+        #user-input {
+            flex: 1;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            outline: none;
+            font-size: 1rem;
+        }
+        
+        #send-button {
+            margin-left: 10px;
+            padding: 10px 15px;
+            background-color: #D82C20;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        #send-button:hover {
+            background-color: #B8241A;
+        }
+        
+        /* Typing Indicator */
+        .typing-indicator {
+            display: flex;
+            padding: 10px 15px;
+            background-color: white;
+            border-radius: 18px;
+            margin-bottom: 15px;
+            width: fit-content;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #999;
+            border-radius: 50%;
+            margin: 0 2px;
+            animation: typingAnimation 1.4s infinite ease-in-out;
+        }
+        
+        .typing-dot:nth-child(1) {
+            animation-delay: 0s;
+        }
+        
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes typingAnimation {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-5px); }
+        }
+        
+        /* Booking Card */
+        .booking-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .booking-card h4 {
+            color: #D82C20;
+            margin-bottom: 8px;
+        }
+        
+        .booking-card p {
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+        
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .action-button {
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        
+        .action-button.primary {
+            background-color: #D82C20;
+            color: white;
+        }
+        
+        .action-button.secondary {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        
+        .action-button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="logo">BN</div>
+            <h2>Barbeque Nation Dining Assistant</h2>
+            <div style="width: 30px;"></div> <!-- Spacer for alignment -->
+        </div>
+        
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages will be inserted here by JavaScript -->
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // DOM Elements
+        const chatMessages = document.getElementById('chat-messages');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+        
+        // Conversation state
+        let currentState = 'greeting';
+        let conversationContext = {
+            bookingInfo: null,
+            location: null,
+            bookingId: null
+        };
+        
+        // Knowledge Base (simulated)
+        const knowledgeBase = {
+            delhi: {
+                faqs: [
+                    {
+                        question: "What are your operating hours?",
+                        keywords: ["timing", "hours", "open", "close", "operating"],
+                        answer: "Our Delhi outlets are open from 11:00 AM to 11:00 PM every day.",
+                        related: ["Do I need a reservation?", "What's the best time to visit?"]
+                    },
+                    {
+                        question: "Do you serve alcohol?",
+                        keywords: ["alcohol", "beer", "wine", "drinks"],
+                        answer: "Yes, we serve a selection of alcoholic beverages at our Delhi outlets.",
+                        related: ["Is there a happy hour?", "What's included in the buffet?"]
+                    }
+                ],
+                outlets: ["Connaught Place", "Saket", "Rajouri Garden"]
+            },
+            bangalore: {
+                faqs: [
+                    {
+                        question: "What are your operating hours?",
+                        keywords: ["timing", "hours", "open", "close", "operating"],
+                        answer: "Our Bangalore outlets are open from 12:00 PM to 11:30 PM every day.",
+                        related: ["Do you have late-night dining?", "Is there a happy hour?"]
+                    },
+                    {
+                        question: "Is there parking available?",
+                        keywords: ["parking", "car", "vehicle"],
+                        answer: "Yes, most of our Bangalore outlets have valet parking or nearby parking facilities.",
+                        related: ["Is the location accessible by metro?", "Do you offer wheelchair access?"]
+                    }
+                ],
+                outlets: ["Indiranagar", "Koramangala", "Whitefield"]
+            },
+            general: {
+                faqs: [
+                    {
+                        question: "What is Barbeque Nation's concept?",
+                        keywords: ["concept", "about", "what is"],
+                        answer: "Barbeque Nation offers live grills on your table with unlimited starters and a buffet spread.",
+                        related: ["What's included in the buffet?", "Is alcohol served?"]
+                    },
+                    {
+                        question: "What are your prices?",
+                        keywords: ["price", "cost", "how much"],
+                        answer: "Our prices vary by location and day of the week. Weekday lunches start at ₹799, while weekend dinners are typically ₹1299 per person.",
+                        related: ["Do you have any discounts?", "Is there a kids' rate?"]
+                    }
+                ]
+            }
+        };
+        
+        // Bookings database (simulated)
+        let bookings = [];
+        
+        // Initialize chat
+        window.onload = function() {
+            addBotMessage("Hello! Welcome to Barbeque Nation. How can I help you today? You can ask about our restaurants, make a booking, or manage an existing booking.", [
+                "Book a table",
+                "Modify my booking",
+                "What are your timings?"
+            ]);
+        };
+        
+        // Event Listeners
+        sendButton.addEventListener('click', sendMessage);
+        userInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+        
+        // Main message handling function
+        function sendMessage() {
+            const message = userInput.value.trim();
+            if (!message) return;
+            
+            addUserMessage(message);
+            userInput.value = '';
+            
+            // Show typing indicator
+            showTypingIndicator();
+            
+            // Process after a short delay to simulate thinking
+            setTimeout(() => {
+                processUserInput(message);
+                // Hide typing indicator
+                document.querySelector('.typing-indicator')?.remove();
+            }, 1000);
+        }
+        
+        // Process user input based on current state
+        function processUserInput(input) {
+            input = input.toLowerCase();
+            
+            switch(currentState) {
+                case 'greeting':
+                    handleGreetingState(input);
+                    break;
+                case 'faq':
+                    handleFAQState(input);
+                    break;
+                case 'new_booking':
+                    handleNewBookingState(input);
+                    break;
+                case 'modify_booking':
+                    handleModifyBookingState(input);
+                    break;
+                case 'cancel_booking':
+                    handleCancelBookingState(input);
+                    break;
+                case 'confirm_booking':
+                    handleConfirmBookingState(input);
+                    break;
+                default:
+                    handleGreetingState(input);
+            }
+        }
+        
+        // State Handlers
+        function handleGreetingState(input) {
+            // Check for greeting keywords
+            const greetingKeywords = ["hi", "hello", "hey", "greetings"];
+            if (greetingKeywords.some(word => input.includes(word))) {
+                addBotMessage("Hello again! How can I assist you today?");
+                return;
+            }
+            
+            // Check for booking keywords
+            const bookingKeywords = ["book", "reservation", "table", "dinner", "lunch"];
+            if (bookingKeywords.some(word => input.includes(word))) {
+                currentState = 'new_booking';
+                conversationContext.bookingInfo = { step: 'location' };
+                addBotMessage("I can help you with that. Which city would you like to book in? We have outlets in Delhi and Bangalore.");
+                return;
+            }
+            
+            // Check for modify/cancel keywords
+            const modifyKeywords = ["modify", "change", "update", "cancel"];
+            if (modifyKeywords.some(word => input.includes(word))) {
+                currentState = 'modify_booking';
+                addBotMessage("Please provide your booking ID or the phone number used for booking.");
+                return;
+            }
+            
+            // Default to FAQ
+            currentState = 'faq';
+            handleFAQState(input);
+        }
+        
+        function handleFAQState(input) {
+            // First check location-specific FAQs
+            if (conversationContext.location) {
+                const locationKB = knowledgeBase[conversationContext.location];
+                const faqMatch = locationKB.faqs.find(faq => 
+                    faq.keywords.some(keyword => input.includes(keyword))
+                );
+                
+                if (faqMatch) {
+                    addBotMessage(faqMatch.answer);
+                    if (faqMatch.related && faqMatch.related.length > 0) {
+                        addBotMessage("Related questions:", faqMatch.related);
+                    }
+                    currentState = 'follow_up';
+                    return;
+                }
+            }
+            
+            // Check general FAQs
+            const generalFaqMatch = knowledgeBase.general.faqs.find(faq => 
+                faq.keywords.some(keyword => input.includes(keyword))
+            );
+            
+            if (generalFaqMatch) {
+                addBotMessage(generalFaqMatch.answer);
+                if (generalFaqMatch.related && generalFaqMatch.related.length > 0) {
+                    addBotMessage("Related questions:", generalFaqMatch.related);
+                }
+                currentState = 'follow_up';
+                return;
+            }
+            
+            // No FAQ match found
+            addBotMessage("I couldn't find information about that. Would you like to:", [
+                "Speak to a representative",
+                "Try asking differently",
+                "Make a booking instead"
+            ]);
+            currentState = 'greeting';
+        }
+        
+        function handleNewBookingState(input) {
+            const bookingInfo = conversationContext.bookingInfo;
+            
+            switch(bookingInfo.step) {
+                case 'location':
+                    if (input.includes('delhi')) {
+                        conversationContext.location = 'delhi';
+                        bookingInfo.location = 'delhi';
+                        bookingInfo.step = 'outlet';
+                        addBotMessage("Great! Which Delhi outlet would you prefer?", knowledgeBase.delhi.outlets);
+                    } else if (input.includes('bangalore')) {
+                        conversationContext.location = 'bangalore';
+                        bookingInfo.location = 'bangalore';
+                        bookingInfo.step = 'outlet';
+                        addBotMessage("Great! Which Bangalore outlet would you prefer?", knowledgeBase.bangalore.outlets);
+                    } else {
+                        addBotMessage("Please specify either Delhi or Bangalore.");
+                    }
+                    break;
+                    
+                case 'outlet':
+                    const outlets = knowledgeBase[bookingInfo.location].outlets;
+                    const selectedOutlet = outlets.find(outlet => 
+                        input.toLowerCase().includes(outlet.toLowerCase())
+                    );
+                    
+                    if (selectedOutlet) {
+                        bookingInfo.outlet = selectedOutlet;
+                        bookingInfo.step = 'date';
+                        addBotMessage(`You selected ${selectedOutlet}. When would you like to visit? (e.g., "15th July" or "July 15")`);
+                    } else {
+                        addBotMessage("Please select one of our outlets:", outlets);
+                    }
+                    break;
+                    
+                case 'date':
+                    // Simple date parsing (would use a library in production)
+                    const dateMatch = input.match(/(\d{1,2})(?:st|nd|rd|th)?\s*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s*(\d{4})?/i);
+                    if (dateMatch) {
+                        const day = dateMatch[1];
+                        const month = dateMatch[2];
+                        const year = dateMatch[3] || new Date().getFullYear();
+                        
+                        // Format as YYYY-MM-DD
+                        const monthNum = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'].indexOf(month.toLowerCase()) + 1;
+                        bookingInfo.date = `${year}-${monthNum.toString().padStart(2, '0')}-${day.padStart(2, '0')}`;
+                        bookingInfo.step = 'time';
+                        addBotMessage(`Got it, ${day} ${month}. What time would you like to book for? (e.g., "7pm" or "19:30")`);
+                    } else {
+                        addBotMessage("Please provide a valid date (e.g., '15th July' or 'July 15').");
+                    }
+                    break;
+                    
+                case 'time':
+                    const timeMatch = input.match(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)?/i);
+                    if (timeMatch) {
+                        let hour = parseInt(timeMatch[1]);
+                        const minute = timeMatch[2] || '00';
+                        const period = timeMatch[3]?.toLowerCase();
+                        
+                        // Convert to 24-hour format
+                        if (period === 'pm' && hour !== 12) {
+                            hour += 12;
+                        } else if (period === 'am' && hour === 12) {
+                            hour = 0;
+                        }
+                        
+                        bookingInfo.time = `${hour.toString().padStart(2, '0')}:${minute}`;
+                        bookingInfo.step = 'guests';
+                        addBotMessage(`Great, ${bookingInfo.time}. How many people will be dining?`);
+                    } else {
+                        addBotMessage("Please provide a valid time (e.g., '7pm' or '19:30').");
+                    }
+                    break;
+                    
+                case 'guests':
+                    const guestsMatch = input.match(/\d+/);
+                    if (guestsMatch) {
+                        bookingInfo.guests = parseInt(guestsMatch[0]);
+                        bookingInfo.step = 'contact';
+                        addBotMessage(`Booking for ${bookingInfo.guests} people. Can I have your name, phone number, and email to complete the booking? (e.g., "My name is John, phone is 9876543210, email is john@example.com")`);
+                    } else {
+                        addBotMessage("Please tell me how many people will be dining (e.g., '4 people').");
+                    }
+                    break;
+                    
+                case 'contact':
+                    // Simple contact info extraction
+                    const nameMatch = input.match(/name is (\w+)/i) || input.match(/my name is (\w+)/i);
+                    const phoneMatch = input.match(/\b\d{10}\b/);
+                    const emailMatch = input.match(/\b[\w.-]+@[\w.-]+\.\w+\b/i);
+                    
+                    if (nameMatch) bookingInfo.name = nameMatch[1];
+                    if (phoneMatch) bookingInfo.phone = phoneMatch[0];
+                    if (emailMatch) bookingInfo.email = emailMatch[0];
+                    
+                    if (bookingInfo.name && bookingInfo.phone && bookingInfo.email) {
+                        bookingInfo.step = 'special_request';
+                        addBotMessage("Thank you! Would you like to add any special requests? (e.g., 'birthday celebration' or 'window seat')");
+                    } else {
+                        const missing = [];
+                        if (!bookingInfo.name) missing.push("name");
+                        if (!bookingInfo.phone) missing.push("phone number");
+                        if (!bookingInfo.email) missing.push("email address");
+                        addBotMessage(`I still need your ${missing.join(', ')} to complete the booking. Please provide them.`);
+                    }
+                    break;
+                    
+                case 'special_request':
+                    bookingInfo.special_request = input;
+                    bookingInfo.step = 'confirmation';
+                    
+                    // Show booking summary
+                    const bookingSummary = `
+                        <div class="booking-card">
+                            <h4>Booking Summary</h4>
+                            <p><strong>Outlet:</strong> ${bookingInfo.outlet}</p>
+                            <p><strong>Date:</strong> ${bookingInfo.date}</p>
+                            <p><strong>Time:</strong> ${bookingInfo.time}</p>
+                            <p><strong>Guests:</strong> ${bookingInfo.guests}</p>
+                            <p><strong>Name:</strong> ${bookingInfo.name}</p>
+                            <p><strong>Phone:</strong> ${bookingInfo.phone}</p>
+                            <p><strong>Email:</strong> ${bookingInfo.email}</p>
+                            ${bookingInfo.special_request ? `<p><strong>Special Request:</strong> ${bookingInfo.special_request}</p>` : ''}
+                        </div>
+                    `;
+                    
+                    addBotMessage(`Here's your booking summary:` + bookingSummary + `Would you like to confirm this booking?`, ["Yes, confirm", "No, cancel"]);
+                    currentState = 'confirm_booking';
+                    break;
+            }
+        }
+        
+        function handleModifyBookingState(input) {
+            // In a real implementation, we would look up the booking
+            // For this demo, we'll simulate finding a booking
+            const bookingIdMatch = input.match(/\b[a-z0-9]{8}\b/i);
+            
+            if (bookingIdMatch) {
+                // Simulate finding a booking
+                const booking = {
+                    id: bookingIdMatch[0],
+                    outlet: "Connaught Place",
+                    date: "2023-12-15",
+                    time: "19:30",
+                    guests: 4,
+                    name: "John Doe",
+                    phone: "9876543210",
+                    email: "john@example.com"
+                };
+                
+                conversationContext.bookingId = booking.id;
+                
+                const bookingSummary = `
+                    <div class="booking-card">
+                        <h4>Your Booking</h4>
+                        <p><strong>ID:</strong> ${booking.id}</p>
+                        <p><strong>Outlet:</strong> ${booking.outlet}</p>
+                        <p><strong>Date:</strong> ${booking.date}</p>
+                        <p><strong>Time:</strong> ${booking.time}</p>
+                        <p><strong>Guests:</strong> ${booking.guests}</p>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="action-button primary" onclick="modifyBookingAction('date')">Change Date</button>
+                        <button class="action-button primary" onclick="modifyBookingAction('time')">Change Time</button>
+                        <button class="action-button secondary" onclick="modifyBookingAction('cancel')">Cancel Booking</button>
+                    </div>
+                `;
+                
+                addBotMessage(`I found your booking:` + bookingSummary + `What would you like to modify?`);
+                currentState = 'modify_options';
+            } else {
+                addBotMessage("I couldn't find a booking with that ID. Please check and try again or provide your phone number.");
+            }
+        }
+        
+        function handleConfirmBookingState(input) {
+            if (input.toLowerCase().includes('yes')) {
+                // Generate booking ID
+                const bookingId = generateBookingId();
+                conversationContext.bookingId = bookingId;
+                
+                // Save booking (in memory for this demo)
+                bookings.push({
+                    ...conversationContext.bookingInfo,
+                    id: bookingId,
+                    status: 'confirmed'
+                });
+                
+                // Show confirmation
+                addBotMessage(`Your booking is confirmed! Your booking ID is ${bookingId}. We look forward to serving you at ${conversationContext.bookingInfo.outlet} on ${conversationContext.bookingInfo.date} at ${conversationContext.bookingInfo.time}.`);
+                
+                // Reset conversation
+                currentState = 'greeting';
+                conversationContext.bookingInfo = null;
+                
+                // Show options
+                addBotMessage("Is there anything else I can help you with?", ["Make another booking", "Ask a question", "No, thanks"]);
+            } else {
+                addBotMessage("Your booking has not been confirmed. Would you like to start over?", ["Yes", "No"]);
+                currentState = 'greeting';
+                conversationContext.bookingInfo = null;
+            }
+        }
+        
+        // Helper Functions
+        function addUserMessage(text) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message message-user';
+            messageDiv.innerHTML = `
+                <div class="message-content">${text}</div>
+            `;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        function addBotMessage(text, quickReplies = null) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message message-bot';
+            
+            let content = `<div class="message-content">${text}</div>`;
+            
+            if (quickReplies && quickReplies.length > 0) {
+                content += `<div class="quick-replies">` +
+                    quickReplies.map(reply => 
+                        `<div class="quick-reply" onclick="handleQuickReply('${reply.replace(/'/g, "\\'")}')">${reply}</div>`
+                    ).join('') +
+                    `</div>`;
+            }
+            
+            messageDiv.innerHTML = content;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        function showTypingIndicator() {
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'message message-bot typing-indicator';
+            typingDiv.innerHTML = `
+                <div class="message-content">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+            `;
+            chatMessages.appendChild(typingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        function generateBookingId() {
+            return Math.random().toString(36).substring(2, 10).toUpperCase();
+        }
+        
+        // Global functions for HTML onclick handlers
+        window.handleQuickReply = function(reply) {
+            userInput.value = reply;
+            sendMessage();
+        };
+        
+        window.modifyBookingAction = function(action) {
+            switch(action) {
+                case 'date':
+                    addBotMessage("What new date would you like to change to? (e.g., '20th December')");
+                    currentState = 'modify_date';
+                    break;
+                case 'time':
+                    addBotMessage("What new time would you like to change to? (e.g., '8pm')");
+                    currentState = 'modify_time';
+                    break;
+                case 'cancel':
+                    addBotMessage("Are you sure you want to cancel this booking?", ["Yes, cancel", "No, keep it"]);
+                    currentState = 'cancel_confirmation';
+                    break;
+            }
+        };
+    </script>
+</body>
+</html>
