@@ -34,14 +34,17 @@ export const ThemeToggle = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className={`
-        fixed max-sm:hidden top-5 right-5 z-50 
-        p-3 rounded-full transition-all duration-300 
+        fixed z-50 p-3 rounded-full transition-all duration-300
+        shadow-lg hover:shadow-xl transform hover:scale-110 focus:outline-none
+
+        bottom-5 left-5                       // Default: mobile
+        sm:top-5 sm:right-5                  // Desktop overrides
+        sm:bottom-auto sm:left-auto
+
         ${isDarkMode 
           ? "bg-slate-800 hover:bg-slate-700" 
           : "bg-white hover:bg-gray-100"
         }
-        shadow-lg hover:shadow-xl transform hover:scale-110
-        focus:outline-none
       `}
       aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
     >
