@@ -9,7 +9,7 @@ const projects = [
     title: "My portfolio",
     category: "Web Development & Design",
     subtitle: "Enhancing Collaboration & Communication",
-    image: {project1},
+    image: project1,
     features: [
       "Responsive & Mobile-Friendly",
       "Fast & Optimized",
@@ -26,7 +26,7 @@ const projects = [
     title: "A travel Guide",
     category: "Public sites",
     subtitle: "A Site for your Holidays Trip",
-    image: {project2},
+    image: project2,
     features: [
       "Personalized & Curated Listings",
       "Secure Authentication & Authorization",
@@ -41,7 +41,7 @@ const projects = [
     title: "BlogNova-A blog Site",
     category: "BlogSite",
     subtitle: "Enhancing Collaboration & Communication and sharing the idea and concepts through blog.",
-    image: {project3},
+    image: project3,
     features: [
       "Responsive & Mobile-Friendly",
       "Fast & Optimized",
