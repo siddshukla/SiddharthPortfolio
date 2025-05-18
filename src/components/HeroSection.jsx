@@ -1,5 +1,5 @@
 import { ArrowDown } from "lucide-react";
-import mainPic from '@/assets/mainPic.png';
+import mainPic from '../assets/mainPic.png';
 
 export const HeroSection = () => {
   return (
@@ -39,7 +39,7 @@ export const HeroSection = () => {
             {/* Profile Photo with Border Effect */}
             <div className="absolute inset-0 rounded-full border-2 border-primary opacity-75 animate-pulse"></div>
             <img 
-              src="./src/assets/mainPic.png"
+              src={mainPic}
               alt="Siddharth Shukla" 
               className="rounded-full object-contain w-full h-full shadow-xl"
             />
