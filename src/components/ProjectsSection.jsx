@@ -1,5 +1,6 @@
 import { ArrowRight, ExternalLink, Github, ChevronRight, Star, Eye, MoveRight } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
+import {project1,project2,project3} from '../assets/';
 
 const projects = [
   {
@@ -7,7 +8,7 @@ const projects = [
     title: "My portfolio",
     category: "Web Development & Design",
     subtitle: "Enhancing Collaboration & Communication",
-    image: "../assets/project1.png",
+    image: {project1},
     features: [
       "Responsive & Mobile-Friendly",
       "Fast & Optimized",
@@ -24,7 +25,7 @@ const projects = [
     title: "A travel Guide",
     category: "Public sites",
     subtitle: "A Site for your Holidays Trip",
-    image: "../assets/project2.png",
+    image: {project2},
     features: [
       "Personalized & Curated Listings",
       "Secure Authentication & Authorization",
@@ -39,7 +40,7 @@ const projects = [
     title: "BlogNova-A blog Site",
     category: "BlogSite",
     subtitle: "Enhancing Collaboration & Communication and sharing the idea and concepts through blog.",
-    image: "../assets/project3.png",
+    image: {project3},
     features: [
       "Responsive & Mobile-Friendly",
       "Fast & Optimized",
