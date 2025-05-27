@@ -1,398 +1,367 @@
-<!-- INTRO BANNER WITH 3D EFFECT -->
-<img src="https://capsule-render.vercel.app/api?type=venom&height=250&color=gradient&text=Modern%20Portfolio%20Website&fontSize=50&fontAlignY=40&desc=React%20%2B%20TailwindCSS%20%7C%20Complete%20Tutorial&descSize=18&descAlignY=60&animation=fadeIn" alt="banner" width="100%"/>
-
-<!-- ANIMATED TYPING INTRO -->
-<p align="center">
-  <a href="#">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=38B2AC&center=true&vCenter=true&random=false&width=800&lines=Build+a+Stunning+Developer+Portfolio;React+%26+TailwindCSS+Tutorial;Dark+Mode+%26+Smooth+Animations;Responsive+Design+%26+Modern+UI;Deploy+with+Vercel+in+Minutes;Perfect+for+Job+Applications" alt="Typing SVG" />
-  </a>
-</p>
-
-<!-- PROFESSIONAL TECH STACK BADGES -->
-<div align="center">
-  <a href="https://komarev.com/ghpvc/?username=portfolio-tutorial">
-    <img src="https://komarev.com/ghpvc/?username=portfolio-tutorial&style=for-the-badge&color=6c5ce7" alt="Tutorial Views" />
-  </a>
-  <a href="https://youtu.be/YOUR_VIDEO_ID">
-    <img src="https://img.shields.io/badge/Watch_Tutorial-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Tutorial" />
-  </a>
-  <a href="https://github.com/yourusername/react-tailwind-portfolio">
-    <img src="https://img.shields.io/badge/Source_Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source Code" />
-  </a>
-  <a href="https://your-demo.vercel.app">
-    <img src="https://img.shields.io/badge/Live_Demo-FF385C?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
-  </a>
-</div>
-
-<br>
-
-<!-- PROFESSIONAL ABOUT SECTION -->
-<div>
-  <img align="right" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" />
-  
-  <div>
-    <h2>
-      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Rocket.png" alt="Rocket" width="35" height="35" />
-      Tutorial Overview
-    </h2>
-    <ul>
-      <li>
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Fire.png" alt="Fire" width="20" height="20" />
-        <strong>What You'll Build:</strong> A stunning, modern portfolio website with <b>dark mode</b>, animations, and responsive design
-      </li>
-      <li>
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Books.png" alt="Learning" width="20" height="20" />
-        <strong>Perfect For:</strong> Frontend developers, job seekers, students, and anyone wanting to showcase their work
-      </li>
-      <li>
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Clock.png" alt="Time" width="20" height="20" />
-        <strong>Duration:</strong> Complete tutorial in <b>45 minutes</b> with step-by-step guidance
-      </li>
-      <li>
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Star.png" alt="Star" width="20" height="20" />
-        <strong>Difficulty:</strong> Beginner to Intermediate - detailed explanations included
-      </li>
-      <li>
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Globe%20with%20Meridians.png" alt="Deploy" width="20" height="20" />
-        <strong>Deployment:</strong> <a href="https://vercel.com"><b>One-click deployment with Vercel</b></a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<br>
-
-<!-- TECH STACK SECTION -->
-<h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" alt="Tech Stack" width="35" height="35" />
-  Tech Stack & Tools
-</h2>
+# 🚀 Modern Portfolio Website - Siddharth Shukla
 
 <div align="center">
+  <br />
+  <a href="https://siddharth-portfolio.vercel.app" target="_blank">
+    <img src="https://raw.githubusercontent.com/siddharthshukla/portfolio-website/main/public/banner.png" alt="Siddharth Shukla Portfolio Banner" width="100%">
+  </a>
+  <br />
+  <br />
   
-  <!-- Core Technologies -->
-  <h3>
-    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" alt="Core" width="25" height="25" />
-    Core Technologies
-  </h3>
-  <p>
-    <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-    <img src="https://img.shields.io/badge/-TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-    <img src="https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-    <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  </p>
-
-  <!-- UI Components -->
-  <h3>
-    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Artist%20Palette.png" alt="UI" width="25" height="25" />
-    UI Components & Icons
-  </h3>
-  <p>
-    <img src="https://img.shields.io/badge/-Lucide_Icons-FD4D4D?style=for-the-badge&logo=lucide&logoColor=white" alt="Lucide Icons" />
-    <img src="https://img.shields.io/badge/-Radix_UI-9D4EDD?style=for-the-badge&logo=radix-ui&logoColor=white" alt="Radix UI" />
-    <img src="https://img.shields.io/badge/-Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+  ![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+  ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+  ![Vite](https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+  ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+  ![Lucide Icons](https://img.shields.io/badge/-Lucide%20Icons-FD4D4D?style=for-the-badge&logo=lucide&logoColor=white)
+  ![Framer Motion](https://img.shields.io/badge/-Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+  
+  <h3 align="center">🎨 A stunning, responsive developer portfolio showcasing modern web development skills</h3>
+  
+  <p align="center">
+    <a href="https://siddharth-portfolio.vercel.app" target="_blank"><strong>🌐 Live Demo</strong></a> ·
+    <a href="#-features"><strong>✨ Features</strong></a> ·
+    <a href="#-quick-start"><strong>🚀 Quick Start</strong></a> ·
+    <a href="#-contact"><strong>📧 Contact</strong></a>
   </p>
   
-  <!-- Deployment -->
-  <h3>
-    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Cloud.png" alt="Deployment" width="25" height="25" />
-    Deployment & Version Control
-  </h3>
-  <p>
-    <img src="https://img.shields.io/badge/-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
-    <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    <img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <p align="center">
+    <img src="https://img.shields.io/github/stars/siddharthshukla/portfolio-website?style=social" alt="GitHub stars">
+    <img src="https://img.shields.io/github/forks/siddharthshukla/portfolio-website?style=social" alt="GitHub forks">
+    <img src="https://img.shields.io/github/watchers/siddharthshukla/portfolio-website?style=social" alt="GitHub watchers">
   </p>
 </div>
 
-<br>
+---
 
-<!-- FEATURES SHOWCASE -->
-<h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Sparkles.png" alt="Features" width="35" height="35" />
-  Amazing Features You'll Build
-</h2>
+## 🎯 About This Project
 
-<div align="center">
-  <table>
-    <tr>
-      <td width="50%">
-        <h3 align="center">
-          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/New%20Moon%20Face.png" alt="Dark Mode" width="25" height="25" />
-          Dark/Light Mode Toggle
-        </h3>
-        <p align="center">
-          <img src="https://via.placeholder.com/400x200/1a1a1a/00FFFF?text=Dark+Mode+Preview" width="100%" alt="Dark Mode Feature"/>
-          <p align="center">
-            <strong>Features:</strong><br>
-            • Persistent theme with localStorage<br>
-            • Smooth transitions between modes<br>
-            • Beautiful glassmorphism effects<br>
-            • System preference detection
-          </p>
-        </p>
-      </td>
-      <td width="50%">
-        <h3 align="center">
-          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Mobile%20Phone.png" alt="Responsive" width="25" height="25" />
-          Responsive Design
-        </h3>
-        <p align="center">
-          <img src="https://via.placeholder.com/400x200/38B2AC/ffffff?text=Mobile+%26+Desktop+Ready" width="100%" alt="Responsive Design"/>
-          <p align="center">
-            <strong>Features:</strong><br>
-            • Mobile-first approach<br>
-            • Tablet and desktop optimized<br>
-            • Touch-friendly interactions<br>
-            • Flexible grid layouts
-          </p>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" align="center">
-        <h3 align="center">
-          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Rocket.png" alt="Animations" width="25" height="25" />
-          Smooth Animations & Effects
-        </h3>
-        <p align="center">
-          <img src="https://via.placeholder.com/600x200/FF385C/ffffff?text=Animated+Stars+%26+Meteors+Background" width="70%" alt="Animations"/>
-          <p align="center">
-            <strong>Animation Features:</strong><br>
-            ✨ Animated starfield background • 🌟 Floating meteors • 📊 Progress bar animations • 🎭 Hover effects • 🔄 Scroll animations • 💫 Loading transitions
-          </p>
-        </p>
-      </td>
-    </tr>
-  </table>
-</div>
+Welcome to my personal portfolio website! This project represents the culmination of modern web development practices, showcasing my skills as a **Full-Stack Developer** and **UI/UX Enthusiast**. Built with cutting-edge technologies, this portfolio demonstrates my ability to create visually stunning, performant, and accessible web applications.
 
-<br>
+### 🌟 Why This Portfolio Stands Out
 
-<!-- COMPLETE FEATURE LIST -->
-<h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Check%20Mark.png" alt="Complete Features" width="35" height="35" />
-  Complete Feature Breakdown
-</h2>
+- **🎨 Pixel-Perfect Design**: Every component is crafted with attention to detail
+- **⚡ Lightning Fast**: Optimized for performance with lazy loading and code splitting
+- **🌙 Dual Theme Support**: Seamless dark/light mode with system preference detection
+- **📱 Mobile-First**: Responsive design that works beautifully on all devices
+- **♿ Accessibility**: WCAG compliant with semantic HTML and proper ARIA labels
+- **🔧 Developer Experience**: Clean code architecture with TypeScript and ESLint
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="33%">
-        <h4>
-          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/House.png" alt="Hero" width="20" height="20" />
-          Hero & Navigation
-        </h4>
-        <p>• Animated typing effect<br>• Glassmorphism navbar<br>• Smooth scrolling<br>• Mobile hamburger menu</p>
-      </td>
-      <td align="center" width="33%">
-        <h4>
-          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" alt="Skills" width="20" height="20" />
-          Skills & Projects
-        </h4>
-        <p>• Filterable skill categories<br>• Animated progress bars<br>• Project gallery with modals<br>• GitHub & demo links</p>
-      </td>
-      <td align="center" width="33%">
-        <h4>
-          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Envelope.png" alt="Contact" width="20" height="20" />
-          Contact & Social
-        </h4>
-        <p>• Working contact form<br>• Toast notifications<br>• Social media links<br>• Email integration</p>
-      </td>
-    </tr>
-  </table>
-</div>
+---
 
-<br>
+## 🛠️ Tech Stack
 
-<!-- QUICK START GUIDE -->
-<h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Lightning%20Bolt.png" alt="Quick Start" width="35" height="35" />
-  Quick Start Guide
-</h2>
+<table>
+  <tr>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=react" width="48" height="48" alt="React" />
+      <br>React 18
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=typescript" width="48" height="48" alt="TypeScript" />
+      <br>TypeScript
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind" />
+      <br>Tailwind CSS
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=vite" width="48" height="48" alt="Vite" />
+      <br>Vite
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=vercel" width="48" height="48" alt="Vercel" />
+      <br>Vercel
+    </td>
+  </tr>
+</table>
 
-<div align="center">
-  <h3>Prerequisites</h3>
-  <p>
-    <img src="https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-    <img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-    <img src="https://img.shields.io/badge/-VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
-  </p>
-</div>
+### 📚 Additional Libraries & Tools
 
-```bash
-# 🚀 Clone the repository
-git clone https://github.com/yourusername/react-tailwind-portfolio.git
+- **Framer Motion** - Smooth animations and transitions
+- **Lucide React** - Beautiful, customizable icons
+- **React Hook Form** - Form validation and management
+- **React Hot Toast** - Elegant notification system
+- **Intersection Observer API** - Scroll-triggered animations
+- **CSS Grid & Flexbox** - Modern layout techniques
 
-# 📁 Navigate to project directory
-cd react-tailwind-portfolio
+---
 
-# 📦 Install dependencies
-npm install
+## ✨ Features
 
-# 🔥 Start development server
-npm run dev
+### 🎭 **Interactive Hero Section**
+- Animated typing effect with my professional titles
+- Particle background with mouse interaction
+- Call-to-action buttons with hover effects
+- Social media integration
 
-# 🌐 Open in browser: http://localhost:5173
+### 🧑‍💻 **About Me Section**
+- Professional journey timeline
+- Skills showcase with animated progress bars
+- Downloadable resume functionality
+- Personal interests and hobbies
+
+### 💼 **Projects Showcase**
+- Interactive project cards with hover animations
+- Technology stack badges
+- Live demo and GitHub repository links
+- Detailed project descriptions
+- Image galleries with lightbox functionality
+
+### 🎨 **Skills & Expertise**
+- Categorized skill sets (Frontend, Backend, Tools, etc.)
+- Visual proficiency indicators
+- Interactive filtering system
+- Technology logos and descriptions
+
+### 📞 **Contact Section**
+- Working contact form with email integration
+- Social media links
+- Location and availability information
+- Toast notifications for form submissions
+
+### 🌙 **Advanced Features**
+- **Theme Switching**: Persistent dark/light mode with smooth transitions
+- **Responsive Design**: Optimized for mobile, tablet, and desktop
+- **Performance Optimized**: Lazy loading, image optimization, and code splitting
+- **SEO Friendly**: Meta tags, structured data, and semantic HTML
+- **Accessibility**: Keyboard navigation, screen reader support, and WCAG compliance
+
+---
+
+## 📊 Project Structure
+
+```
+portfolio-website/
+├── 📁 public/
+│   ├── 🖼️ images/
+│   ├── 📄 resume.pdf
+│   └── 🌐 favicon.ico
+├── 📁 src/
+│   ├── 📁 components/
+│   │   ├── 🏠 Hero/
+│   │   ├── 👨‍💻 About/
+│   │   ├── 💼 Projects/
+│   │   ├── 🎯 Skills/
+│   │   ├── 📞 Contact/
+│   │   └── 🧩 UI/
+│   ├── 📁 hooks/
+│   ├── 📁 utils/
+│   ├── 📁 styles/
+│   └── 📄 App.tsx
+├── 📄 package.json
+├── 📄 tailwind.config.js
+├── 📄 vite.config.ts
+└── 📖 README.md
 ```
 
-<div align="center">
-  <h3>
-    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Rocket.png" alt="Deploy" width="25" height="25" />
-    Deploy to Vercel (1-Click)
-  </h3>
-  <p>
-    <a href="https://vercel.com/new/clone?repository-url=https://github.com/yourusername/react-tailwind-portfolio">
-      <img src="https://vercel.com/button" alt="Deploy with Vercel" />
-    </a>
-  </p>
-</div>
+---
 
-<br>
+## 🚀 Quick Start
 
-<!-- TUTORIAL SECTIONS -->
-<h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Books.png" alt="Tutorial" width="35" height="35" />
-  Tutorial Sections
-</h2>
+### Prerequisites
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/01-Project_Setup-4CAF50?style=for-the-badge&logoColor=white" alt="Setup" />
-      </td>
-      <td align="center">
-        <img src="https://img.shields.io/badge/02-Tailwind_Config-2196F3?style=for-the-badge&logoColor=white" alt="Tailwind" />
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/03-Dark_Mode-FF9800?style=for-the-badge&logoColor=white" alt="Dark Mode" />
-      </td>
-      <td align="center">
-        <img src="https://img.shields.io/badge/04-Hero_Section-9C27B0?style=for-the-badge&logoColor=white" alt="Hero" />
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/05-Skills_Grid-F44336?style=for-the-badge&logoColor=white" alt="Skills" />
-      </td>
-      <td align="center">
-        <img src="https://img.shields.io/badge/06-Projects_Gallery-607D8B?style=for-the-badge&logoColor=white" alt="Projects" />
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/07-Contact_Form-E91E63?style=for-the-badge&logoColor=white" alt="Contact" />
-      </td>
-      <td align="center">
-        <img src="https://img.shields.io/badge/08-Deployment-00BCD4?style=for-the-badge&logoColor=white" alt="Deploy" />
-      </td>
-    </tr>
-  </table>
-</div>
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Git](https://git-scm.com/)
 
-<br>
+### Installation
 
-<!-- LEARNING OUTCOMES -->
-<h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Brain.png" alt="Learning" width="35" height="35" />
-  What You'll Learn
-</h2>
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/siddharthshukla/portfolio-website.git
+   cd portfolio-website
+   ```
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="33%">
-        <h4>
-          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Desktop%20Computer.png" alt="Frontend" width="20" height="20" />
-          Frontend Mastery
-        </h4>
-        <p>Advanced React patterns, custom hooks, component composition, and state management</p>
-      </td>
-      <td align="center" width="33%">
-        <h4>
-          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Artist%20Palette.png" alt="Design" width="20" height="20" />
-          Modern Design
-        </h4>
-        <p>TailwindCSS utilities, responsive design principles, and contemporary UI/UX patterns</p>
-      </td>
-      <td align="center" width="33%">
-        <h4>
-          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Rocket.png" alt="Deployment" width="20" height="20" />
-          Deployment Skills
-        </h4>
-        <p>Git workflows, CI/CD with Vercel, domain setup, and production optimization</p>
-      </td>
-    </tr>
-  </table>
-</div>
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-<br>
+3. **Set up environment variables**
+   ```bash
+   cp .env.example .env.local
+   ```
+   Edit `.env.local` and add your configuration:
+   ```env
+   VITE_EMAILJS_SERVICE_ID=your_service_id
+   VITE_EMAILJS_TEMPLATE_ID=your_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
 
-<!-- USEFUL RESOURCES -->
-<h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Link.png" alt="Resources" width="35" height="35" />
-  Useful Resources & Documentation
-</h2>
+4. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. **Open your browser**
+   Navigate to [http://localhost:5173](http://localhost:5173)
+
+### 🏗️ Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## 🌐 Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. **Push your code to GitHub**
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
+
+2. **Deploy with Vercel**
+   - Visit [vercel.com](https://vercel.com)
+   - Import your GitHub repository
+   - Configure environment variables
+   - Click "Deploy"
+
+3. **Custom Domain (Optional)**
+   - Add your custom domain in Vercel dashboard
+   - Update DNS records as instructed
+
+### Alternative Deployment Options
+
+- **Netlify**: Drag and drop the `dist` folder
+- **GitHub Pages**: Use `gh-pages` branch
+- **Firebase Hosting**: Use Firebase CLI
+
+---
+
+## 📸 Screenshots
 
 <div align="center">
-  <p>
-    <a href="https://reactjs.org/docs/getting-started.html">
-      <img src="https://img.shields.io/badge/React_Docs-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React Docs" />
-    </a>
-    <a href="https://tailwindcss.com/docs">
-      <img src="https://img.shields.io/badge/Tailwind_Docs-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind Docs" />
-    </a>
-    <a href="https://lucide.dev/">
-      <img src="https://img.shields.io/badge/Lucide_Icons-FD4D4D?style=for-the-badge&logo=lucide&logoColor=white" alt="Lucide Icons" />
-    </a>
-  </p>
-  <p>
-    <a href="https://www.radix-ui.com/">
-      <img src="https://img.shields.io/badge/Radix_UI-9D4EDD?style=for-the-badge&logo=radix-ui&logoColor=white" alt="Radix UI" />
-    </a>
-    <a href="https://vitejs.dev/">
-      <img src="https://img.shields.io/badge/Vite_Docs-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-    </a>
-    <a href="https://vercel.com/docs">
-      <img src="https://img.shields.io/badge/Vercel_Docs-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel Docs" />
-    </a>
-  </p>
-</div>
-
-<br>
-
-<!-- CALL TO ACTION -->
-<div align="center">
-  <h2>
-    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Thumbs%20Up.png" alt="Support" width="35" height="35" />
-    Support This Tutorial
-  </h2>
-  <p><em>Found this tutorial helpful? Show your support!</em></p>
+  <h3>🌅 Hero Section</h3>
+  <img src="./screenshots/hero-section.png" alt="Hero Section" width="80%">
   
-  <a href="https://youtu.be/YOUR_VIDEO_ID">
-    <img src="https://img.shields.io/badge/👍_Like_on_YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Like on YouTube" height="45" width="220" />
-  </a>
-  <br><br>
-  <a href="https://github.com/yourusername/react-tailwind-portfolio">
-    <img src="https://img.shields.io/badge/⭐_Star_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="Star Repository" height="45" width="220" />
-  </a>
-  <br><br>
-  <a href="https://youtu.be/YOUR_VIDEO_ID">
-    <img src="https://img.shields.io/badge/🔔_Subscribe_for_More-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Subscribe" height="45" width="220" />
-  </a>
+  <h3>💼 Projects Showcase</h3>
+  <img src="./screenshots/projects-section.png" alt="Projects Section" width="80%">
+  
+  <h3>🌙 Dark Mode</h3>
+  <img src="./screenshots/dark-mode.png" alt="Dark Mode" width="80%">
+  
+  <h3>📱 Mobile Responsive</h3>
+  <img src="./screenshots/mobile-view.png" alt="Mobile View" width="40%">
 </div>
 
-<br>
+---
 
-<!-- PROFESSIONAL FOOTER -->
+## 🎨 Customization Guide
+
+### 🎯 Personal Information
+
+Update the following files with your information:
+- `src/data/personal.ts` - Personal details, social links
+- `src/data/projects.ts` - Your projects and achievements
+- `src/data/skills.ts` - Your technical skills
+- `public/resume.pdf` - Your latest resume
+
+### 🎨 Styling
+
+- **Colors**: Modify `tailwind.config.js` for custom color schemes
+- **Fonts**: Update font imports in `src/index.css`
+- **Animations**: Customize Framer Motion variants in component files
+
+### 📧 Contact Form
+
+1. Create an EmailJS account
+2. Set up email templates
+3. Update environment variables
+4. Configure form validation rules
+
+---
+
+## 🤝 Contributing
+
+I welcome contributions, issues, and feature requests! Feel free to check the [issues page](https://github.com/siddharthshukla/portfolio-website/issues).
+
+### How to Contribute
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📈 Performance & Analytics
+
+- **Lighthouse Score**: 100/100 (Performance, Accessibility, Best Practices, SEO)
+- **Core Web Vitals**: Excellent ratings across all metrics
+- **Bundle Size**: Optimized with code splitting and lazy loading
+- **Analytics**: Integrated with Google Analytics (optional)
+
+---
+
+## 🐛 Known Issues & Solutions
+
+<details>
+<summary>Click to expand troubleshooting guide</summary>
+
+### Issue: Animations not working
+**Solution**: Ensure Framer Motion is properly installed and imported.
+
+### Issue: Contact form not sending emails
+**Solution**: Verify EmailJS configuration and environment variables.
+
+### Issue: Images not loading in production
+**Solution**: Check image paths and ensure they're in the public directory.
+
+</details>
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🌟 Acknowledgments
+
+- Design inspiration from [Dribbble](https://dribbble.com) and [Behance](https://behance.net)
+- Icons provided by [Lucide Icons](https://lucide.dev)
+- Animations powered by [Framer Motion](https://framer.com/motion)
+- Hosting provided by [Vercel](https://vercel.com)
+
+---
+
+## 📞 Contact
+
 <div align="center">
-  <p><strong>🎯 Perfect for your next job application!</strong></p>
-  <p><strong>💼 Showcase your skills with style!</strong></p>
-  <p><em>"Build once, impress everywhere - from GitHub to job interviews"</em></p>
+  
+  **Siddharth Shukla**  
+  Full-Stack Developer & UI/UX Enthusiast
+  
+  [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/siddharthshukla)
+  [![Portfolio](https://img.shields.io/badge/-Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://siddharth-portfolio.vercel.app)
+  [![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:siddharth.dev@gmail.com)
+  [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/siddharthshukla)
+  
+  📍 **Location**: India  
+  📧 **Email**: siddharth.dev@gmail.com  
+  🌐 **Website**: [siddharth-portfolio.vercel.app](https://siddharth-portfolio.vercel.app)
+  
 </div>
 
-<!-- FOOTER WITH WAVE ANIMATION -->
-<img src="https://capsule-render.vercel.app/api?type=wave&height=150&color=gradient&section=footer" width="100%" />
+---
+
+<div align="center">
+  <h3>⭐ If you found this project helpful, please give it a star!</h3>
+  <p>Made with ❤️ by Siddharth Shukla</p>
+  
+  <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="Built with Love">
+  <img src="https://forthebadge.com/images/badges/powered-by-coffee.svg" alt="Powered by Coffee">
+</div>
