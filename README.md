@@ -3,7 +3,7 @@
 <div align="center">
   <br />
   <a href="https://siddharthshukla.tech/" target="_blank">
-    <img src="https://raw.githubusercontent.com/siddharthshukla/portfolio-website/main/banner.png" alt="Siddharth Shukla Portfolio Banner" width="100%">
+    <img src="https://github.com/siddshukla/SiddharthPortfolio/blob/main/2.jpg" alt="Siddharth Shukla Portfolio Banner" width="100%">
   </a>
   <br />
   <br />
@@ -24,11 +24,7 @@
     <a href="#-contact"><strong>📧 Contact</strong></a>
   </p>
   
-  <p align="center">
-    <img src="https://img.shields.io/github/stars/siddharthshukla/portfolio-website?style=social" alt="GitHub stars">
-    <img src="https://img.shields.io/github/forks/siddharthshukla/portfolio-website?style=social" alt="GitHub forks">
-    <img src="https://img.shields.io/github/watchers/siddharthshukla/portfolio-website?style=social" alt="GitHub watchers">
-  </p>
+  
 </div>
 
 ---
