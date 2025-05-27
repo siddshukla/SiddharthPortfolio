@@ -349,7 +349,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/siddharthshukla)
   
   📍 **Location**: India  
-  📧 **Email**: siddharth.dev@gmail.com  
+  📧 **Email**: siddsanskshukla@gmail.com  
   🌐 **Website**: [siddharthshukla.tech](https://siddharthshukla.tech/)
   
 </div>
