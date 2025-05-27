@@ -241,16 +241,16 @@ npm run preview
 
 <div align="center">
   <h3>🌅 Hero Section</h3>
-  <img src="./screenshots/hero-section.png" alt="Hero Section" width="80%">
+  <img src="https://github.com/siddshukla/SiddharthPortfolio/blob/main/1.jpg" alt="Hero Section" width="80%">
   
   <h3>💼 Projects Showcase</h3>
-  <img src="./screenshots/projects-section.png" alt="Projects Section" width="80%">
+  <img src="https://github.com/siddshukla/SiddharthPortfolio/blob/main/3.jpg" alt="Projects Section" width="80%">
   
   <h3>🌙 Dark Mode</h3>
-  <img src="./screenshots/dark-mode.png" alt="Dark Mode" width="80%">
+  <img src="https://github.com/siddshukla/SiddharthPortfolio/blob/main/2.jpg" alt="Dark Mode" width="80%">
   
   <h3>📱 Mobile Responsive</h3>
-  <img src="./screenshots/mobile-view.png" alt="Mobile View" width="40%">
+  <img src="https://github.com/siddshukla/SiddharthPortfolio/blob/main/4.jpg" alt="Mobile View" width="40%">
 </div>
 
 ---
