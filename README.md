@@ -2,8 +2,8 @@
 
 <div align="center">
   <br />
-  <a href="https://siddharth-portfolio.vercel.app" target="_blank">
-    <img src="https://raw.githubusercontent.com/siddharthshukla/portfolio-website/main/public/banner.png" alt="Siddharth Shukla Portfolio Banner" width="100%">
+  <a href="https://siddharthshukla.tech/" target="_blank">
+    <img src="https://raw.githubusercontent.com/siddharthshukla/portfolio-website/main/banner.png" alt="Siddharth Shukla Portfolio Banner" width="100%">
   </a>
   <br />
   <br />
@@ -11,14 +11,14 @@
   ![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
   ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
   ![Vite](https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-  ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+  ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
   ![Lucide Icons](https://img.shields.io/badge/-Lucide%20Icons-FD4D4D?style=for-the-badge&logo=lucide&logoColor=white)
   ![Framer Motion](https://img.shields.io/badge/-Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
   
   <h3 align="center">🎨 A stunning, responsive developer portfolio showcasing modern web development skills</h3>
   
   <p align="center">
-    <a href="https://siddharth-portfolio.vercel.app" target="_blank"><strong>🌐 Live Demo</strong></a> ·
+    <a href="https://siddharthshukla.tech/" target="_blank"><strong>🌐 Live Demo</strong></a> ·
     <a href="#-features"><strong>✨ Features</strong></a> ·
     <a href="#-quick-start"><strong>🚀 Quick Start</strong></a> ·
     <a href="#-contact"><strong>📧 Contact</strong></a>
@@ -44,7 +44,7 @@ Welcome to my personal portfolio website! This project represents the culminatio
 - **🌙 Dual Theme Support**: Seamless dark/light mode with system preference detection
 - **📱 Mobile-First**: Responsive design that works beautifully on all devices
 - **♿ Accessibility**: WCAG compliant with semantic HTML and proper ARIA labels
-- **🔧 Developer Experience**: Clean code architecture with TypeScript and ESLint
+- **🔧 Developer Experience**: Clean code architecture with modern JavaScript and ESLint
 
 ---
 
@@ -57,8 +57,8 @@ Welcome to my personal portfolio website! This project represents the culminatio
       <br>React 18
     </td>
     <td align="center" width="100">
-      <img src="https://skillicons.dev/icons?i=typescript" width="48" height="48" alt="TypeScript" />
-      <br>TypeScript
+      <img src="https://skillicons.dev/icons?i=js" width="48" height="48" alt="JavaScript" />
+      <br>JavaScript ES6+
     </td>
     <td align="center" width="100">
       <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind" />
@@ -132,10 +132,6 @@ Welcome to my personal portfolio website! This project represents the culminatio
 
 ```
 portfolio-website/
-├── 📁 public/
-│   ├── 🖼️ images/
-│   ├── 📄 resume.pdf
-│   └── 🌐 favicon.ico
 ├── 📁 src/
 │   ├── 📁 components/
 │   │   ├── 🏠 Hero/
@@ -147,10 +143,12 @@ portfolio-website/
 │   ├── 📁 hooks/
 │   ├── 📁 utils/
 │   ├── 📁 styles/
-│   └── 📄 App.tsx
+│   ├── 📁 assets/
+│   │   └── 🖼️ images/
+│   └── 📄 App.jsx
 ├── 📄 package.json
 ├── 📄 tailwind.config.js
-├── 📄 vite.config.ts
+├── 📄 vite.config.js
 └── 📖 README.md
 ```
 
@@ -262,10 +260,10 @@ npm run preview
 ### 🎯 Personal Information
 
 Update the following files with your information:
-- `src/data/personal.ts` - Personal details, social links
-- `src/data/projects.ts` - Your projects and achievements
-- `src/data/skills.ts` - Your technical skills
-- `public/resume.pdf` - Your latest resume
+- `src/data/personal.js` - Personal details, social links
+- `src/data/projects.js` - Your projects and achievements
+- `src/data/skills.js` - Your technical skills
+- `src/assets/resume.pdf` - Your latest resume
 
 ### 🎨 Styling
 
@@ -317,7 +315,7 @@ I welcome contributions, issues, and feature requests! Feel free to check the [i
 **Solution**: Verify EmailJS configuration and environment variables.
 
 ### Issue: Images not loading in production
-**Solution**: Check image paths and ensure they're in the public directory.
+**Solution**: Check image paths and ensure they're properly imported in the src/assets directory.
 
 </details>
 
@@ -346,13 +344,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   Full-Stack Developer & UI/UX Enthusiast
   
   [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/siddharthshukla)
-  [![Portfolio](https://img.shields.io/badge/-Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://siddharth-portfolio.vercel.app)
+  [![Portfolio](https://img.shields.io/badge/-Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://siddharthshukla.tech/)
   [![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:siddharth.dev@gmail.com)
   [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/siddharthshukla)
   
   📍 **Location**: India  
   📧 **Email**: siddharth.dev@gmail.com  
-  🌐 **Website**: [siddharth-portfolio.vercel.app](https://siddharth-portfolio.vercel.app)
+  🌐 **Website**: [siddharthshukla.tech](https://siddharthshukla.tech/)
   
 </div>
 
